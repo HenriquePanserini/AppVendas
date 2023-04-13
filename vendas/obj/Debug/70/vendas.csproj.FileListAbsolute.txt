@@ -1,0 +1,10 @@
+C:\android\vendas\vendas\obj\Debug\70\MonoAndroid,Version=v7.0.AssemblyAttributes.cs
+C:\android\vendas\vendas\obj\Debug\70\build.props
+C:\android\vendas\vendas\obj\Debug\70\adb.props
+C:\android\vendas\vendas\obj\Debug\70\vendas.csproj.AssemblyReference.cache
+C:\android\vendas\vendas\obj\Debug\70\stamp\_BuildLibraryImportsCache.stamp
+C:\android\vendas\vendas\obj\Debug\70\res.flag
+C:\android\vendas\vendas\obj\Debug\70\lp\1\jl\files.cache
+C:\android\vendas\vendas\obj\Debug\70\lp\3\jl\files.cache
+C:\android\vendas\vendas\obj\Debug\70\lp\4\jl\files.cache
+C:\android\vendas\vendas\obj\Debug\70\lp\47\jl\files.cache

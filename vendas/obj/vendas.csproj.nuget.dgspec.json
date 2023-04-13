@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\android\\vendas\\vendas\\vendas.csproj": {}
+  },
+  "projects": {
+    "C:\\android\\vendas\\vendas\\vendas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\android\\vendas\\vendas\\vendas.csproj",
+        "projectName": "vendas",
+        "projectPath": "C:\\android\\vendas\\vendas\\vendas.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\android\\vendas\\vendas\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Acr.Support": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.2.0.564, )"
+            },
+            "AndHUD": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Dexter": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
+            "Microsoft.Recognizers.Text.DateTime": {
+              "target": "Package",
+              "version": "[1.8.5, )"
+            },
+            "Microsoft.VisualStudio.Designer.Interfaces": {
+              "target": "Package",
+              "version": "[17.2.32505.113, )"
+            },
+            "Mono.Data.Sqlite.Portable": {
+              "target": "Package",
+              "version": "[1.0.3.5, )"
+            },
+            "Nager.Date": {
+              "target": "Package",
+              "version": "[1.35.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2-beta1, )"
+            },
+            "NodaTime": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Rengwuxian.MaterialEditText.Xamarin.Android": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Storm.BuildTasks.AndroidColors": {
+              "target": "Package",
+              "version": "[0.2.2, )"
+            },
+            "Superpower": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Syncfusion.Blazor.Popups": {
+              "target": "Package",
+              "version": "[20.2.0.39, )"
+            },
+            "Syncfusion.Xamarin.Pdf": {
+              "target": "Package",
+              "version": "[20.2.0.39, )"
+            },
+            "Xam.iTextSharpLGPL": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v4": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.v7.MediaRouter": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Essentials.Interfaces": {
+              "target": "Package",
+              "version": "[1.7.3.2, )"
+            },
+            "Xamarin.Essentials.Services": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Xamarin.MySql.Data": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

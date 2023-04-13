@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:foregroundGravity="center">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:padding="30dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center">
+        <Button
+            android:text="Sincronizar Cadastros"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_clie"
+            android:width="250dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:layout_gravity="center">
+        <Button
+            android:text="Sincronizar vendas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/sincro2"
+            android:visibility="visible"
+            android:width="250dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="52.0dp"
+        android:id="@+id/linearLayout8"
+        android:layout_marginBottom="72.0dp"
+        android:layout_marginRight="0.0dp">
+        <Button
+            android:text=" Libera Sincronizacao "
+            android:layout_width="wrap_content"
+            android:layout_height="20px"
+            android:id="@+id/btn_vend_paraor"
+            android:width="250dp"
+            android:visibility="invisible"
+            android:layout_marginRight="71.0dp"
+            android:layout_marginLeft="71.0dp"
+            android:layout_marginBottom="0.0dp" 
+			/>
+    </LinearLayout>
+    <Button
+        android:text="Sincronizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/btn_vend"
+        android:width="250dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout17"
+        android:visibility="invisible"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout4">
+        </LinearLayout>
+        <Button
+            android:text="Sincrinização Orcamentos"
+            android:layout_width="382.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_vend_or"
+            android:visibility="invisible"
+            android:layout_marginRight="222.5dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout18">
+        <Button
+            android:text="Limpar Vendas"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_sup"
+            android:width="250dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            />
+    </LinearLayout>
+    <Button
+        android:text="Cadastro Cliente"
+        android:width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/cadcli"
+        
+        />
+
+</LinearLayout>

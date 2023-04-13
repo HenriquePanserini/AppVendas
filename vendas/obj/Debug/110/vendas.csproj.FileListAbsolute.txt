@@ -1,0 +1,4 @@
+C:\android\vendas\vendas\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
+C:\android\vendas\vendas\obj\Debug\110\build.props
+C:\android\vendas\vendas\obj\Debug\110\adb.props
+C:\android\vendas\vendas\obj\Debug\110\vendas.csproj.AssemblyReference.cache
