@@ -64,10 +64,10 @@ namespace vendas
             //StartActivity(typeof(at_vendas));
 
 
-            // int tam = Convert.ToString(lista_produto.GetItemAtPosition(e.Position)).Length;
-            // int tamred = tam - 5;
+            //int tam = Convert.ToString(lista_produto.GetItemAtPosition(e.Position)).Length;
+            //int tamred = tam - 5;
 
-            // string xnome1 = Convert.ToString(lista_produto.GetItemAtPosition(e.Position)).Substring(tamred, 5);
+           // string xnome1 = Convert.ToString(lista_produto.GetItemAtPosition(e.Position)).Substring(tamred, 5);
 
 
             // //
@@ -80,19 +80,14 @@ namespace vendas
 
 
             int tam = Convert.ToString(lista_produto.GetItemAtPosition(e.Position)).Length;
-            int tamred = tam - 5;
+            int tamred = tam - 6;
 
             string xnome1 = Convert.ToString(lista_produto.GetItemAtPosition(e.Position)).Substring(tamred, 5);
 
-
-            //
-            int codpro1 = 0;
-
-            if(int.TryParse(xnome1.TrimStart(),out codpro1))
-            {
+            //int codpro1 = Convert.ToInt32(xnome1.TrimStart()); 
 
                 //Toast.MakeText(this, TAM.ToString(), ToastLength.Short).Show();
-                DataTable dados = Cl_gestor.EXE_QUERY("select * from Produtos where id_produto = " + codpro1);
+                DataTable dados = Cl_gestor.EXE_QUERY("select * from produtos where id_produto = " + xnome1.TrimStart());
 
                 if (dados.Rows.Count != 0)
                 {
@@ -103,7 +98,7 @@ namespace vendas
                     vars.precoproduto = Convert.ToDecimal(dados.Rows[0]["preco"]);
                     vars.precoproduto2 = Convert.ToDecimal(dados.Rows[0]["preco2"]);
                     vars.precoproduto3 = Convert.ToDecimal(dados.Rows[0]["preco3"]);
-                    vars.precoproduto4 = Convert.ToDecimal(dados.Rows[0]["preco4"]);
+                    //vars.precoproduto4 = Convert.ToDecimal(dados.Rows[0]["preco4"]);
                     vars.descontoprod = Convert.ToDecimal(dados.Rows[0]["descapp"]);
 
                     //List<SQLparametro> parametro = new List<SQLparametro>();
@@ -135,9 +130,6 @@ namespace vendas
                 StartActivityForResult(x, 0);
 
                 this.Finish();
-
-            }
-
 
         }
 

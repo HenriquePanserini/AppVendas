@@ -63,17 +63,14 @@ namespace vendas
             btn_vend_or = FindViewById<Button>(Resource.Id.btn_vend_or);
             btn_sup = FindViewById<Button>(Resource.Id.btn_sup);
             cadcli = FindViewById<Button>(Resource.Id.cadcli);
-            //btn_confsincro = FindViewById<Button>(Resource.Id.confsincro);
             btn_vend_paraor = FindViewById<Button>(Resource.Id.btn_vend_paraor);
             btn_sincro2 = FindViewById<Button>(Resource.Id.sincro2);
 
             btn_vend.Click += Btn_vend_Click;
             btn_clie.Click += Btn_clie_Click;
             btn_vend_or.Click += Btn_vend_or_Click;
-            btn_sup.Click += Btn_sup_Click;
-            //btn_teste.Click += Btn_teste_Click;              
+            btn_sup.Click += Btn_sup_Click; 
             cadcli.Click += Cadcli_Click;
-           // btn_confsincro.Click += Btn_confsincro_Click;
             btn_vend_paraor.Click += Btn_vend_paraor_Click;
             btn_sincro2.Click += Btn_sincro2_Click;
 
@@ -84,9 +81,15 @@ namespace vendas
         public async void Btn_sincro2_Click(object sender, EventArgs e)
         {
 
+
+            //LEIA A DOCUMENTAÇÃO E ADICIONE COMENTARIOS 
+
+            // Atribui valor de query a variavel dbpbar
             DataTable dbpbar = Cl_gestor.EXE_QUERY("SELECT * FROM vendas");
+            //Le a quantidade de linhas dentro da tabela na variavel dbpbar
             int qtdProgress = dbpbar.Rows.Count;
 
+            //Indicadore display de barra de progresso que funciona com carregamento em design Spin 
             pbar = new Android.App.ProgressDialog(this);
             pbar.SetMessage("sincronizando...");
             pbar.SetCancelable(false);
@@ -95,8 +98,11 @@ namespace vendas
             pbar.Max = qtdProgress;
             pbar.Show();
 
+            //indicador de barra de status que incia em 0
             int statusBarr = 0;
 
+            /*Query que executa um delete na tabela numero de vendas para iniciar uma nova adição de 
+             Valores a ela, e exclusao de tabela do ultimo backup para a realização do backup de uma nova venda*/
             Cl_gestor.NOM_QUERY("DELETE FROM nvenda");
             Cl_gestor.NOM_QUERY("DELETE FROM vendasprd_BKP");
             Cl_gestor.NOM_QUERY("DELETE FROM vendas_BKP");
@@ -110,6 +116,7 @@ namespace vendas
 
                 if (vars.web_local)
                 {
+                    /*Atribui a enderecows o caminho para comunicação com a API SOAP em PHP*/
                     dados = Cl_gestor.EXE_QUERY("SELECT * FROM parametro");
                     enderecows = dados.Rows[0]["endereco"].ToString() + "/insert5.php";
                     enderecowsporta = dados.Rows[0]["endereco"].ToString();
@@ -117,6 +124,7 @@ namespace vendas
                 }
                 else
                 {
+                    
                     dados = Cl_gestor.EXE_QUERY("SELECT * FROM parametro");
                     enderecows = dados.Rows[0]["caminholocal"].ToString() + "/insert5.php";
                     enderecowsporta = dados.Rows[0]["caminholocal"].ToString();
@@ -128,11 +136,13 @@ namespace vendas
                 Toast.MakeText(this, "Erro ao conectar com servidor", ToastLength.Long);
             }
 
+            /* Atribui a uma variavel do tipo list a os dados da Classe SQLparametros*/
             List<SQLparametro> parametrox = new List<SQLparametro>();
             parametrox.Add(new SQLparametro("@data", DateTime.MinValue));
 
             int cv1 = 0;
 
+            /* Execução de Query que seleciona os dados da tabela venda e atribui a uma variavel do tipo DataTable*/
             dados = Cl_gestor.EXE_QUERY("SELECT * FROM vendas WHERE datasincro == @data", parametrox);
 
             Console.WriteLine(" linhas header ------> " + dados.Rows.Count);

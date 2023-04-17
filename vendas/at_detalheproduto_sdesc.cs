@@ -24,7 +24,7 @@ namespace vendas
         RadioButton preco1;
         RadioButton preco2;
         RadioButton preco3;
-        RadioButton preco4;
+        //RadioButton preco4;
 
 
         
@@ -53,37 +53,22 @@ namespace vendas
 
             SetContentView(Resource.Layout.layout_detalheproduto_sdesc);
 
-
-
             radiopreco = FindViewById<RadioGroup>(Resource.Id.radioGroup1);
             preco1 = FindViewById<RadioButton>(Resource.Id.radioButton1);
             preco2 = FindViewById<RadioButton>(Resource.Id.radioButton2);
             preco3 = FindViewById<RadioButton>(Resource.Id.radioButton3);
-            preco4 = FindViewById<RadioButton>(Resource.Id.radioButton4);
+            //preco4 = FindViewById<RadioButton>(Resource.Id.radioButton4);
 
-
-            
-
-           //  unitario = FindViewById<EditText>(Resource.Id.unitario);
-           quantidade = FindViewById<EditText>(Resource.Id.quantidade);
+            quantidade = FindViewById<EditText>(Resource.Id.quantidade);
             btn_cancelar = FindViewById<Button>(Resource.Id.btn_cancelar);
             btn_gravar = FindViewById<Button>(Resource.Id.btn_gravar);
             produtodesc = FindViewById<TextView>(Resource.Id.produtodesc);
             subtotal = FindViewById<EditText>(Resource.Id.subtotal);
 
-
-
-
-
             preco1.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", vars.precoproduto.ToString());
             preco2.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", vars.precoproduto2.ToString());
             preco3.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", vars.precoproduto3.ToString());
-            preco4.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", vars.precoproduto4.ToString());
-
-
-           
-
-
+            //preco4.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", vars.precoproduto4.ToString());
 
             int xc = 0;
 
@@ -98,36 +83,36 @@ namespace vendas
 
             int x = 1;
 
-           // unitario.BeforeTextChanged += Unitario_BeforeTextChanged;
+            //unitario.BeforeTextChanged += Unitario_BeforeTextChanged;
             //unitario.TextChanged += Unitario_TextChanged;
-          //  unitario.BeforeTextChanged += Unitario_BeforeTextChanged;
-          //  quantidade.BeforeTextChanged += Quantidade_BeforeTextChanged;
+            //unitario.BeforeTextChanged += Unitario_BeforeTextChanged;
+            //quantidade.BeforeTextChanged += Quantidade_BeforeTextChanged;
             btn_gravar.Click += Btn_gravar_Click;
            
-          //  unitario.Click += Unitario_Click;
+            //unitario.Click += Unitario_Click;
             btn_cancelar.Click += Btn_cancelar_Click;
             preco1.Click += Preco1_Click;
             preco2.Click += Preco2_Click;
             preco3.Click += Preco3_Click;
-            preco4.Click += Preco4_Click;
+            //preco4.Click += Preco4_Click;
         }
 
-        private void Preco4_Click(object sender, EventArgs e)
-        {
+        //private void Preco4_Click(object sender, EventArgs e)
+        //{
 
-            if ((quantidade.Text != "") && (quantidade.Text != null))
-            {
-                string x = vars.precoproduto4.ToString();
-                x = x.Replace(".", ",");
-                decimal xunitario = Math.Round(Convert.ToDecimal(x), 2);
-                decimal xquantidade = decimal.Parse(quantidade.Text);
+        //    if ((quantidade.Text != "") && (quantidade.Text != null))
+        //    {
+        //        string x = vars.precoproduto4.ToString();
+        //        x = x.Replace(".", ",");
+        //        decimal xunitario = Math.Round(Convert.ToDecimal(x), 2);
+        //        decimal xquantidade = decimal.Parse(quantidade.Text);
 
-                unitarif = xunitario = Math.Round(Convert.ToDecimal(x), 2);
+        //        unitarif = xunitario = Math.Round(Convert.ToDecimal(x), 2);
 
-                subtotal.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", xunitario * xquantidade);
+        //        subtotal.Text = string.Format(CultureInfo.GetCultureInfo("pt-BR"), "{0:C}", xunitario * xquantidade);
 
-            }
-        }
+        //    }
+        //}
 
         private void Preco3_Click(object sender, EventArgs e)
         {
@@ -165,11 +150,6 @@ namespace vendas
 
             }
         }
-
-
-
-
-
 
         private void Preco1_Click(object sender, EventArgs e)
         {

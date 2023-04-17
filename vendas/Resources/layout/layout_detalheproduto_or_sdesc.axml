@@ -65,34 +65,29 @@
 			android:padding="20dp"
 			android:foregroundGravity="center"
 			android:width="150dp" />
-		<RadioGroup
-			android:minWidth="25px"
-			android:minHeight="25px"
-			android:layout_width="174.5dp"
-			android:layout_height="match_parent"
-			android:id="@+id/radioGroup1or">
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:checked="true"
-				android:text="1"
-				android:id="@+id/radioButton1or" />
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="2"
-				android:id="@+id/radioButton2or" />
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="3"
-				android:id="@+id/radioButton3or" />
-			<RadioButton
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="4"
-				android:id="@+id/radioButton4or" />
-		</RadioGroup>
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="174.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup1or">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="1"
+                android:id="@+id/radioButton1or" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/radioButton2or" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/radioButton3or" />
+        </RadioGroup>
 	</LinearLayout>
 	<LinearLayout
 		android:orientation="horizontal"
